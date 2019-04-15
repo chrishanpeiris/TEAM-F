@@ -1,0 +1,9 @@
+Title - Refactoring: Transform the logic into smaller pieces of codes to understand it easily
+
+Motivation to refactor - the main motivation here is to understand the logic easily. This will benefit developers to read the code quickly and it will reduce the complexity of long logics. In the Stadium class, there are certain rules apply to get the ticket price based on the dates of the year. currently, the logic is written in the same piece of code and if the logic develops further, it is hard to maintain. Therefore, we can cut the logic into different potions. 
+
+Pattern - by using Composing method  we can simplify the code logic and improve the readability of the code 
+
+
+
+
