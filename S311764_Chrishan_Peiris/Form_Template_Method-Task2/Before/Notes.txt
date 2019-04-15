@@ -1,0 +1,7 @@
+Title - Refactoring: multiple methods in subclass perform similar actions and the steps are different for each subclass. Use form template method to generalize the code and access the template in subclasses
+
+Motivation to refactor - The main motivation here is to remove duplicate codes in subclasses (Cricket class, Football class). The other reason is to develop a template (invariant behaviour - common template) and apply them to subclasses. This means we can move duplicated behaviour into one place (an Abstract superclass) and access the fixed template in subclasses. In this way, we can override the inherited common method in subclasses as we want. 
+
+Pattern - by using Template pattern we can create a common behaviour of methods to use in subclasses. This helps us to simplify the code and keep common methods in one place. The form template is under behavioural patterns.
+
+
