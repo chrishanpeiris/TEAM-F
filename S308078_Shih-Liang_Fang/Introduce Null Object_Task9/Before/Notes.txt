@@ -1,0 +1,9 @@
+Title
+
+We got a code has multiple customers, sometimes, the customers at one location moved away and the new customers have not moved in. There is no customer at this location. Since this is possible, we must ensure that all users of Customer are able to handle the "Customer object equals null" condition. Here are some sample clips
+
+Motivation
+There are many sites and customers in this system, all of which must check if the Customer object is equal to null, and such checks are completely duplicated, so It seems that it is time to use a null object.
+
+Pattern
+Null object: If we need to check again and again that "something is null value", we can replace null value with an invalid object because it doesn't have to ask the object what type of value are you.

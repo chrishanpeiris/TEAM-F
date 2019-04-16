@@ -1,0 +1,12 @@
+Title
+
+The loan code can support three different types of currency, but inside the code has a lot of duplicated codes, so we are using chain constructors method to refactoring it.
+
+Motivation
+
+Writing duplicate code in two or more constructors in the same category is the seed that is burying trouble for yourself.
+
+Pattern
+
+We often use the Constructor Chaining style for refactoring: the specific constructor function calls the general-purpose constructor, repeating the process until the most general constructor is called.
+If the end of each call chain is the same constructor, I call it the "catch-all" constructor because it handles calls to all constructors.
