@@ -1,0 +1,6 @@
+Title - Handle exceptions by removing error codes with exceptions
+
+Motivation to refactor - Error codes can be a risk for software. This is because hackers might do injections with the help of error codes. Therefore, we do not need to show error codes to the outside world, when there is an error occurred in the system. Instead, we handle it with exceptions. 
+
+Pattern/refactoring method - By using Replace Error code with Exception method, we can handle exceptions
+ 
