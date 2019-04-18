@@ -1,0 +1,5 @@
+Title - Extract one class to another. Moving features between objects.
+
+Motivation to refactor - classes must be clear and understandable, also the content of it should be meaningful for the class. Classes should have their own responsibilities. If there are any additional responsibilities for the class such as having functionalities of other classes, those functionalities must move to new other classes. 
+
+Pattern/refactoring method - By using Extract class method, we can move unrelated codes into meaningful classes 
