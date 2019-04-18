@@ -1,0 +1,5 @@
+Title - Rename method names in a meaningful way
+
+Motivation to refactor - method names with abbreviations are not recommended. This is because if some other developer read the code, he or she cannot understand the meaning of the method name. It is better to write the full name of the method in a meaningful way (method name should be matched with what tasks are being done from the method)
+
+Pattern/refactoring method - By using Rename Method, we can refactor the code
