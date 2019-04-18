@@ -1,0 +1,6 @@
+Title - Change array to an object as an array always contains similar objects in the same format
+
+Motivation to refactor - if we use an array, we are limited to the same type of data throughout the array. Sometimes an array is enough for software at the beginning of it. However, it is recommended to change arrays to objects because an object can be used to keep different types of data.
+
+Pattern/refactoring method - By using Replace array with Object refactoring method, we can convert an array to an object.
+
