@@ -1,15 +1,17 @@
 # Step 1 Create a new NullCustomer and modify the Customer to support the check if the object is null:
 # Step 1 Modify NullCustomer
+
    class NullCustomer extends Customer {
    public boolean isNull() {
        return true;
    }
-# Step 4 Adds a suitable function to get the customer name through this function:
-   public String getName(){
-       if (customer.isNull()) customerName = "occupant";
-       else customerName = customer.getName();
+   
+# Step 4 Adds a suitable function to get the customer name through this function
+
+  public String getName(){
        return "occupant";
    }
+   
 # Step 6 Repeat Step 4 to plan function
 
    public void setPlan (BillingPlan arg) {
@@ -20,19 +22,34 @@
 # Step 8 Remove PaymentHistory function and create a new function
 
    public PaymentHistory getHistory() {
-	   if (customer.isNull()) weeksDelinquent = 0;
-       else weeksDelinquent = customer.getHistory().getWeeksDelinquentInLastYear();
+	
        return PaymentHistory.newNull();
    }
    }
-   class Customer...
+   
+   class Customer... {
    public boolean isNull() {
        return false;
    }
    protected Customer() {} //needed by the NullCustomer
+   
+# Step 3 Modify all "Use Customer Objects" to have them checked with the isNull() function, no longer using the "== null" check.
+	Customer customer = site.getCustomer();
+       BillingPlan plan;
+       if (customer.isNull()) plan = BillingPlan.basic();
+       else plan = customer.getPlan();
+ ...
 
+       String customerName;
+       if (customer.isNull()) customerName = "occupant";
+       else customerName = customer.getName();
+ ...
 
+       int weeksDelinquent;
+       if (customer.isNull()) weeksDelinquent = 0;
+       else weeksDelinquent = customer.getHistory().getWeeksDelinquentInLastYear();
 
+   }
 # Step 9 Create a new NullPaymentHistory class because it uses the result of the Customer function
  
  class NullPaymentHistory extends PaymentHistory...
@@ -49,7 +66,7 @@
            _customer;
    }
 
-# Step 3 Modify all "Use Customer Objects" to have them checked with the isNull() function, no longer using the "== null" check.
+
 
 # Step 7 Repeat Step 5 to plan function 
 
