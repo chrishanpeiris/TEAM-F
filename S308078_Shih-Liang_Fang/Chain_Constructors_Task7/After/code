@@ -1,0 +1,36 @@
+# The constructor one and constructor two contain duplicate code as well as the third constructor. 
+# The first constructor will call the third construct. So I refactorized the constructor one to:
+
+public Loan(float notional, float outstanding, int rating, Date expiry) {
+
+this(new TermROC(), notional, outstanding, rating, expiry, null);
+
+}
+
+# Do the same thing to the constructor two.
+
+public Loan(float notional, float outstanding, int rating, Date expiry, Date maturity) {
+
+this(new RevolvingTermROC(), notional, outstanding, rating, expiry, maturity);
+
+}
+
+# The third constructor is the catch-all constructor because it handles all the details.
+
+public Loan(CapitalStrategy strategy, float notional, float outstanding, int rating,
+
+Date expiry, Date maturity) {
+
+this.strategy = strategy;
+
+this.notional = notional;
+
+this.outstanding = outstanding;
+
+this.rating = rating;
+
+this.expiry = expiry;
+
+this.maturity = maturity;
+
+}
