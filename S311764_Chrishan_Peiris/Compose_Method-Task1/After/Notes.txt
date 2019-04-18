@@ -1,0 +1,2 @@
+Summary of changes
+Move the if condition into a separate method called isQuantity, this will make it easy to read the code and the same condition can be used somewhere else. Created two separate methods called summerCharge and winterCharge, this will help to simplify the code by decomposing them. Also, the summer charge and winter charge calculations can be used for common purposes. 
