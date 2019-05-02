@@ -22,7 +22,7 @@ public class SendFactory {
 		} else if ("sms".equals(type)) {
 			return new SmsSender();
 		} else {
-			System.out.println("请输入正确的类型!");
+			System.out.println("Please Input Correct Type.");
 			return null;
 		}
 	}
