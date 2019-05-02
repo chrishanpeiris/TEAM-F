@@ -1,0 +1,3 @@
+Summary of changes
+
+Created an object called TournamentObject instead of having an array. Then defined two variables inside that object to keep values of that object and created four methods to set and get values by arguments. When the application runs the displayScore method, it will call the setname and setscore methods in TournamentObject and retrieve the values assigned. 
