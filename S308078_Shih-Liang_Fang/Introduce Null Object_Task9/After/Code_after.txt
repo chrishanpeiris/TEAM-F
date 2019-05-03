@@ -1,25 +1,25 @@
-# Step 1 Create a new NullCustomer and modify the Customer to support the check if the object is null:
-# Step 1 Modify NullCustomer
+// Step 1 Create a new NullCustomer and modify the Customer to support the check if the object is null:
+// Step 1 Modify NullCustomer
 
    class NullCustomer extends Customer {
    public boolean isNull() {
        return true;
    }
    
-# Step 4 Adds a suitable function to get the customer name through this function
+// Step 4 Adds a suitable function to get the customer name through this function
 
   public String getName(){
        return "occupant";
    }
    
-# Step 6 Repeat Step 4 to plan function
+// Step 6 Repeat Step 4 to plan function
 
    public void setPlan (BillingPlan arg) {
 		if (! customer.isNull())
            customer.setPlan(BillingPlan.special());
    }
    
-# Step 8 Remove PaymentHistory function and create a new function
+// Step 8 Remove PaymentHistory function and create a new function
 
    public PaymentHistory getHistory() {
 	
@@ -33,7 +33,7 @@
    }
    protected Customer() {} //needed by the NullCustomer
    
-# Step 3 Modify all "Use Customer Objects" to have them checked with the isNull() function, no longer using the "== null" check.
+// Step 3 Modify all "Use Customer Objects" to have them checked with the isNull() function, no longer using the "== null" check.
 	Customer customer = site.getCustomer();
        BillingPlan plan;
        if (customer.isNull()) plan = BillingPlan.basic();
@@ -50,14 +50,14 @@
        else weeksDelinquent = customer.getHistory().getWeeksDelinquentInLastYear();
 
    }
-# Step 9 Create a new NullPaymentHistory class because it uses the result of the Customer function
+// Step 9 Create a new NullPaymentHistory class because it uses the result of the Customer function
  
  class NullPaymentHistory extends PaymentHistory...
    int getWeeksDelinquentInLastYear() {
        return 0;
    }
 
-# Step 2 Find all the functions will return "null" and modify them so that they can't return null, instead return a NullCustomer object.
+// Step 2 Find all the functions will return "null" and modify them so that they can't return null, instead return a NullCustomer object.
 
  class Site...
    Customer getCustomer() {
@@ -68,15 +68,15 @@
 
 
 
-# Step 7 Repeat Step 5 to plan function 
+// Step 7 Repeat Step 5 to plan function 
 
       customer.setPlan(BillingPlan.special());
 	   
-# Step 5 Remove if-statement 
+// Step 5 Remove if-statement 
 
       String customerName = customer.getName();
 	  
-# Step 10 Repeat Step 5 to history function
+// Step 10 Repeat Step 5 to history function
  
       int weeksDelinquent = customer.getHistory().getWeeksDelinquentInLastYear();
 	   

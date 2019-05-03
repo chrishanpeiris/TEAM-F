@@ -1,0 +1,3 @@
+Summary of changes
+
+In the initial code, if the user passes a value which cannot be determined from the Java runtime, it will through a Java Exception to the user, and this is avoided by applying try, catch method and handle the exception coming from Java and display a customized message.

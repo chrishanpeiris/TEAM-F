@@ -16,7 +16,7 @@ class AccountInfo {
   class Account {
       public static void main(String[] args) {
           AccountInfo account = new AccountInfo();
-          int withdrawAuthorisation = account.withdraw(1500);
+          int withdrawAuthorisation = account.withdraw(50/0);
           System.out.println(withdrawAuthorisation);
       }
   }

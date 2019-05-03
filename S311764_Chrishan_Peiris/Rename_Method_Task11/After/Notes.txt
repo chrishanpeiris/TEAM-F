@@ -1,0 +1,2 @@
+Summary of changes 
+Since the variable in that method is related to office telephone details, the method name has changed to a meaningful name called getOfficeTelephoneNumber. If any other developer see this code, they can understand for what purpose the method is used for. 
