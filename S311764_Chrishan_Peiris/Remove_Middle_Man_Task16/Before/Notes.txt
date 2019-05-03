@@ -1,0 +1,9 @@
+Title - Remove middle man. Moving features between objects.
+
+Motivation to refactor - when there are methods which are delegated to other objects, the code will be complex and when adding new features to those we have to consider about delegated methods as well and it will take time to do changes. Therefore, it is better to remove those methods and allow direct access.
+
+Pattern/refactoring method - By using Remove middle man method, we can remove delegations which prevent direct access between objects
+
+Link to the repository - https://github.com/chrishanpeiris/TEAM-F/tree/master/S311764_Chrishan_Peiris/Remove_Middle_Man_Task16
+
+The UML diagram of before state is attached in this card.
