@@ -1,15 +1,18 @@
-private SqlCommand PrepareCommand(string storedProcedureName)
-{
-    SqlConnection con = new SqlConnection(ConnectionString);
-    SqlCommand cmd = con.CreateCommand();
-    con.Open();
-    cmd.CommandType = CommandType.StoredProcedure;
-    cmd.CommandText = storedProcedureName;
-    return cmd;
+type requestBuilder interface {
+    NewRequest(string, string, io.Reader) (*http.Request, error)
 }
- 
-public SqlDataReader GetData()
-{
-    SqlCommand cmd = PrepareCommand("spSampleStoredProc");
-    return cmd.ExecuteReader(CommandBehavior.CloseConnection);
+
+type reqBuilder struct {}
+func (rb *reqBuilder) NewRequest(method, url string, body io.Reader) (*http.Request, error) {
+    return http.NewRequest(method, url, body)
+}
+
+
+func Check(rb requestBuilder) (warnings, errors []error) {
+
+    req, err := rb.NewRequest("GET", u, nil)
+    if err != nil {
+        return nil, []error{err}
+    }
+   
 }
