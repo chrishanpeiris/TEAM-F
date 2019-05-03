@@ -1,0 +1,9 @@
+Title - Replace exception with a test. Simplifying Method Calls.
+
+Motivation to refactor - Exception handling should only be used to handle irregular behaviours of a code. If it is possible to avoid exception handling in simple situations, we must replace it with a simple condition rather than throwing exceptions.    
+
+Pattern/refactoring method - By using replace exception with a test method, we can avoid throwing exceptions in simple situations.
+
+Link to the repository - https://github.com/chrishanpeiris/TEAM-F/tree/master/S311764_Chrishan_Peiris/Replace_Exception_with_Test_Task17
+
+The UML diagram of before state is attached in this card.
