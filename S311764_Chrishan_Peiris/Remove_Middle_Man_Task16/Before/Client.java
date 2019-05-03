@@ -26,7 +26,7 @@ class Department {
 
 public class Client {
     public static void main(String[] args) {
-        manager = john.getManager();
-
+        Person person = new Person();
+        manager = person.getManager();
     }
 }
