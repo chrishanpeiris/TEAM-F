@@ -1,0 +1,3 @@
+Summary of changes
+
+Created a separate class called TelephoneNumberDetails to move all the variables and methods which are not related to PersonDetails class. In this way, we can extract all the unnecessary features from objects and insert into meaningful objects where we can read the code easily. Other developers can understand the code easily.
