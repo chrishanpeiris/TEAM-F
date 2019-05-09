@@ -1,0 +1,3 @@
+Summary of changes
+
+Removed Department object instance from the middle man class and call the getManagerFromDepartment method directly through the department object instance. This will aid to avoid unnecessary coupling of methods.
