@@ -1,18 +1,13 @@
 class ResourcePool {
-    private Stack available;
-    private Stack allocated;
 
-    public Resource getResource() {
-        Resource result;
+    public void getResource() {
         try {
-            result = (Resource) available.pop();
-            allocated.push(result);
-            return result;
-        } catch (EmptyStackException e) {
-            result = new Resource();
-            allocated.push(result);
-            return result;
+            int[] myNumbers = { 1, 2, 3 };
+            System.out.println(myNumbers[10]);
+        } catch (Exception e) {
+            System.out.println("Something went wrong.");
         }
+
     }
 }
 
