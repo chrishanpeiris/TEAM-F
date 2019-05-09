@@ -4,7 +4,7 @@ public interface Sender {
 public class MailSender implements Sender {
 	@Override
 	public void Send() {
-		System.out.println("this is mailsender!");
+		System.out.println("this is mail sender!");
 	}
 }
 public class SmsSender implements Sender {
