@@ -1,25 +1,22 @@
 class Person {
-    private Department department;
+    Department department = new Department();
 
     public void setDepartment(Department arg) {
         department = arg;
     }
 
-    public Person getManager() {
-        return department.getManager();
+    public String getManager() {
+        String managerName = department.getManagerFromDepartment();
+        System.out.println(managerName);
+        return managerName;
     }
 }
 
 class Department {
-    private String chargeCode;
-    private Person manager;
 
-    public Department(Person arg) {
-        manager = arg;
-    }
-
-    public Person getManager() {
-        return manager;
+    public String getManagerFromDepartment() {
+        String name = "Sam";
+        return name;
     }
 
 }
@@ -27,6 +24,6 @@ class Department {
 public class Client {
     public static void main(String[] args) {
         Person person = new Person();
-        manager = person.getManager();
+        person.getManager();
     }
 }
