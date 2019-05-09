@@ -1,0 +1,9 @@
+Title - Model View Controller Pattern (MVC)
+
+Motivation to refactor - When the logic is inside the view of an application, it is hard to maintain the application when it is bigger. The motivation here is to separate the logic from the view and manage the application. In MVC pattern the application will be separated into three parts called the model, the view, and the controller. This way, it is easy to maintain the application as separate groups.
+
+Pattern/refactoring method - By using the Model View Controller pattern, we can separate the application into three parts. 
+
+Link to the repository - https://github.com/chrishanpeiris/TEAM-F/tree/master/S311764_Chrishan_Peiris/Model_View_Controller_Pattern_Task_40
+
+The UML diagram of before state is attached in this card.
