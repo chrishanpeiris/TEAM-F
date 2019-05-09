@@ -1,10 +1,6 @@
 class Person {
     Department department = new Department();
 
-    public void setDepartment(Department arg) {
-        department = arg;
-    }
-
     public String getManager() {
         String managerName = department.getManagerFromDepartment();
         System.out.println(managerName);
