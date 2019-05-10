@@ -1,0 +1,9 @@
+Title - Singleton design pattern  (creational) 
+
+Motivation to refactor - It is not a good practice to have multiple instances for a class. There should be only one instance of a class. This is because it is easy to handle access control for shared resources. This will improve security by making the default constructor as private, and it will prevent other objects from using new objects.
+
+Pattern/refactoring method - By using the singleton design pattern, we can create only a single instance for a class
+
+Link to the repository - https://github.com/chrishanpeiris/TEAM-F/tree/master/S311764_Chrishan_Peiris/Singleton_Pattern_Task_41
+
+The UML diagram of before state is attached in this card.
