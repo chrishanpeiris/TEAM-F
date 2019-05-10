@@ -1,0 +1,9 @@
+Title - Decorator pattern  (structural)
+
+Motivation to refactor - If we need to add new functionality to an existing object without altering its structure, we can use the decorator pattern. This allows putting new functionalities into a different class with unique features of it and adds those unique features to an existing object. 
+
+Pattern/refactoring method - By using the decorator design pattern, we can add new functionalities into an existing object without affecting its structure. 
+
+Link to the repository - https://github.com/chrishanpeiris/TEAM-F/tree/master/S311764_Chrishan_Peiris/Decorator_PatternTask_42
+
+The UML diagram of before state is attached in this card.
