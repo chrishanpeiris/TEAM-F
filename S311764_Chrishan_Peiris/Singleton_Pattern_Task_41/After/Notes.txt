@@ -1,0 +1,3 @@
+Summary of changes
+
+Removed multiple instances for the same class object and created a single instance for the object. Call the methods via the created singleton object.
