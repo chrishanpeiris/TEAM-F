@@ -1,0 +1,3 @@
+Summary of changes
+
+Create separate classes for model, view and controller called StudentModel, StudentView and StudentController. Then moved the functions and variables in the single class to those created model, view and controller classes. Created object instances for model and view inside the controller and pass the retrieved values from the main method to model and view and took the output.
