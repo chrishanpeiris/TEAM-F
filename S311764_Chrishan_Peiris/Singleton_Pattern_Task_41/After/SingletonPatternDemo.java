@@ -15,13 +15,11 @@ class SingleObject {
 
 public class SingletonPatternDemo {
     public static void main(String[] args) {
-    
-        SingleObject message1 = new SingleObject();
-        SingleObject message2 = new SingleObject();
-        SingleObject message3 = new SingleObject();
 
-        message1.showMessage();
-        message2.showMessage2();
-        message3.showMessage3();
+        SingleObject message = new SingleObject();//created a single instance for accessing the singleObject class 
+
+        message.showMessage();//call the methods via single instance
+        message.showMessage2();//call the methods via single instance
+        message.showMessage3();//call the methods via single instance
     }
 }
