@@ -1,27 +1,27 @@
-public class Source {
- 
-	public void method1() {
-		System.out.println("this is original method!");
-	}
+public class orginalpizza {
+
+    public void Pizza1() {
+        System.out.println("this is original Pizza!");
+    }
 }
-public interface Targetable {
- 
-	public void method1();
- 
-	public void method2();
+public interface allpizza {
+
+    public void Pizza1();
+
+    public void newpizza();
 }
-public class Adapter extends Source implements Targetable {
- 
-	@Override
-	public void method2() {
-		System.out.println("this is the targetable method!");
-	}
+public class NewPizza extends orginalpizza implements allpizza {
+
+    @Override
+    public void newpizza() {
+        System.out.println("this is the new Pizza!");
+    }
 }
-public class AdapterTest {
- 
-	public static void main(String[] args) {
-		Targetable target = new Adapter();
-		target.method1();
-		target.method2();
-	}
+public class PizzaOrderTest {
+
+    public static void main(String[] args) {
+        allpizza pizza = new NewPizza();
+        pizza.Pizza1();
+        pizza.newpizza();
+    }
 }
