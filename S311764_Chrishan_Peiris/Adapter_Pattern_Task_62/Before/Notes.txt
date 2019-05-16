@@ -1,0 +1,9 @@
+Title - Adapter Pattern (structural design patterns)
+
+Motivation to refactor - This pattern allows us to create a bridge between objects, an interface can be used to adapt to different classes and objects. In this example, the car speed will show based on the country measurements. For instance, the car speed is measured in mph in us where the km is used in the UK.
+
+Pattern/refactoring method - By using the Adapter pattern, we can create an interface that can be adapt to any object or class
+
+Link to the repository - https://github.com/chrishanpeiris/TEAM-F/tree/master/S311764_Chrishan_Peiris/Adapter_Pattern_Task_62
+
+The UML diagram of before state is attached in this card.
