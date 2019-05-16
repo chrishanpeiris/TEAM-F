@@ -1,0 +1,3 @@
+Summary of changes
+
+Created an interface to define the base of the ice cream object with a method signature and override it in another class called SimpleIceCream and overrode the defined method in the interface. Created a separate class for ice cream decoration and added decoration for base ice cream without affecting it. Likewise, we can add any number of decorations for a based object.
