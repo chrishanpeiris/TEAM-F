@@ -1,0 +1,9 @@
+Title - Facade Pattern (structural design patterns)
+
+Motivation to refactor - Using this pattern we can reduce the complexity of a system by structuring the system into subsystems, in this example, to start a car, there are many things happening behind the scene, if those things call when starting the system, it will quite complex, but we can put them into sub-systems and reduce the complexity. 
+
+Pattern/refactoring method - By using the Facade pattern, we can create system into subsystems
+
+Link to the repository - https://github.com/chrishanpeiris/TEAM-F/tree/master/S311764_Chrishan_Peiris/Facade_Pattern_Task_60
+
+The UML diagram of before state is attached in this card.
