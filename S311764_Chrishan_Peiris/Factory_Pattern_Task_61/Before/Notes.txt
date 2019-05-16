@@ -1,0 +1,9 @@
+Title - Factory Pattern (creational design pattern)
+
+Motivation to refactor - The motivation of this pattern is to create a separate interface to create an object and initiate the classes based on subclass selection. In this example, the type of Dog selected based on the requirements.
+ 
+Pattern/refactoring method - By using the Factory pattern, we can create a separate interface to call upon requirements
+
+Link to the repository - https://github.com/chrishanpeiris/TEAM-F/tree/master/S311764_Chrishan_Peiris/Factory_Pattern_Task_61
+
+The UML diagram of before state is attached in this card.
