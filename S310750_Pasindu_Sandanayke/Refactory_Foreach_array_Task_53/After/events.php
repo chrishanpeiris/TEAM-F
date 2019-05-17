@@ -8,6 +8,8 @@ $scores = array(
     'type2' => 5,
     'type3' => 10,
 );
+
+//reduce function takes an array of values and reduces them to a single value
 $score = array_reduce( $types, function( $result, $type ) use ( $scores ) {
     return $result += isset( $scores[$type] ) ? $scores[$type] : 1;
 } );
